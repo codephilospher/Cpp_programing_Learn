@@ -17,4 +17,26 @@ DAY 1:-
 
 <i>WORK:-Create A BASIC CALCULATOR,FACTORIAL FINDER.</i>
 
+</h2><b>DAY:-2</b></h2>
+
+<h3>patterns.cpp</h3>
+The <b>patterns.cpp</b> program is a menu-driven C++ program for displaying different patterns.
+
+<h3>What I Practiced</h3>
+<ul>
+<li>Created a menu using <code>while</code> and <code>switch</code>.</li>
+<li>Used functions to keep each pattern separate and reusable.</li>
+<li>Created a square pattern with sequential numbers based on the side size entered by the user.</li>
+<li>Created a triangular pattern using stars based on the height entered by the user.</li>
+<li>Used nested <code>for</code> loops to print rows and columns.</li>
+<li>Added an exit option and a message for invalid choices.</li>
+</ul>
+
+<h3>Menu Options</h3>
+<ol>
+<li>Display a square pattern.</li>
+<li>Display a triangular pattern.</li>
+<li>Exit the program.</li>
+</ol>
+
 
