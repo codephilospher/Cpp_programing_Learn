@@ -13,3 +13,8 @@ DAY 1:-
 
 :Unary: Increment (++) and Decrement (--) operations.
 
+:Understanding loop concept.
+
+<i>WORK:-Create A BASIC CALCULATOR,FACTORIAL FINDER.</i>
+
+
