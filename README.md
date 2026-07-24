@@ -30,6 +30,7 @@ The <b>patterns.cpp</b> program is a menu-driven C++ program for displaying diff
 <li>Created a triangular pattern using stars based on the height entered by the user.</li>
 <li>Created a reverse triangular pattern with decreasing numbers in each row.</li>
 <li>Created Floyd's triangle with consecutive numbers arranged in rows.</li>
+<li>Created an inverted triangle pattern with repeated numbers in each row.</li>
 <li>Used nested <code>for</code> loops to print rows and columns.</li>
 <li>Used separate height inputs to control the size of each pattern.</li>
 <li>Added an exit option and a message for invalid choices.</li>
@@ -41,6 +42,7 @@ The <b>patterns.cpp</b> program is a menu-driven C++ program for displaying diff
 <li>Display a triangular pattern.</li>
 <li>Display a reverse triangular pattern.</li>
 <li>Display Floyd's triangle.</li>
+<li>Display an inverted triangle pattern.</li>
 <li>Exit the program.</li>
 </ol>
 

@@ -50,6 +50,18 @@ void displayFloydsTriangle(int floydHeight) {
         cout << endl;
     }
 }
+void  displayInvertedTriangle(int invertedHeight) {
+    cout << "\nInverted Triangle Pattern:\n";
+    int num = 1; // You can change this value to adjust the height of the inverted triangle
+    for (int i = 1; i <= invertedHeight; i++) {
+        for (int j = invertedHeight; j >= i; j--) {
+            cout << num << "  ";
+          
+        }
+          num++;
+        cout << endl;
+    }
+}
 int main() {
     int choice;
 
@@ -59,7 +71,8 @@ int main() {
         cout << "2. Display  triangular pattern\n";
         cout << "3.Display reverse triangular pattern\n";
         cout << "4.FLoyd's triangle pattern\n";
-        cout << "5. Exit\n";
+        cout << "5. Inverted triangle pattern\n";
+        cout << "6. Exit\n";
         cout << "==================================\n";
         cout << "Enter your choice: ";
         cin >> choice;
@@ -93,6 +106,13 @@ int main() {
                 displayFloydsTriangle(floydHeight);
                 break;
             case 5:
+                cout << "Inverted Triangle Pattern:\n";
+                cout << "Enter the height of the inverted triangle: ";
+                int invertedHeight;
+                cin >> invertedHeight;
+                displayInvertedTriangle(invertedHeight);
+                break;
+            case 6:
                 cout << "Exiting pattern menu.\n";
                 return 0;
             default:
