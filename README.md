@@ -17,7 +17,7 @@ DAY 1:-
 
 <i>WORK:-Create A BASIC CALCULATOR,FACTORIAL FINDER.</i>
 
-</h2><b>DAY:-2</b></h2>
+<h2>DAY:-2</h2>
 
 <h3>patterns.cpp</h3>
 The <b>patterns.cpp</b> program is a menu-driven C++ program for displaying different patterns.
@@ -28,7 +28,10 @@ The <b>patterns.cpp</b> program is a menu-driven C++ program for displaying diff
 <li>Used functions to keep each pattern separate and reusable.</li>
 <li>Created a square pattern with sequential numbers based on the side size entered by the user.</li>
 <li>Created a triangular pattern using stars based on the height entered by the user.</li>
+<li>Created a reverse triangular pattern with decreasing numbers in each row.</li>
+<li>Created Floyd's triangle with consecutive numbers arranged in rows.</li>
 <li>Used nested <code>for</code> loops to print rows and columns.</li>
+<li>Used separate height inputs to control the size of each pattern.</li>
 <li>Added an exit option and a message for invalid choices.</li>
 </ul>
 
@@ -36,6 +39,8 @@ The <b>patterns.cpp</b> program is a menu-driven C++ program for displaying diff
 <ol>
 <li>Display a square pattern.</li>
 <li>Display a triangular pattern.</li>
+<li>Display a reverse triangular pattern.</li>
+<li>Display Floyd's triangle.</li>
 <li>Exit the program.</li>
 </ol>
 
