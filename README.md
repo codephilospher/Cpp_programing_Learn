@@ -27,6 +27,7 @@
 <li>Created Floyd's triangle.</li>
 <li>Created an inverted triangle pattern.</li>
 <li>Added a new pyramid pattern option.</li>
+<li>Added a new diamond pattern option.</li>
 <li>Used nested <code>for</code> loops for row and column printing.</li>
 <li>Added input prompts for each pattern size or height.</li>
 <li>Added an exit option and invalid-choice handling.</li>
@@ -40,6 +41,7 @@
 <li>Floyd's triangle</li>
 <li>Inverted triangle pattern</li>
 <li>Pyramid pattern</li>
+<li>Diamond pattern</li>
 <li>Exit the program</li>
 </ol>
 

@@ -92,6 +92,41 @@ void displayPyramid(int pyramidHeight) {
         cout << endl;
 }
 }
+/*
+DIAMOND PATTERN
+                *
+            *      *
+        *              *
+    *                      *
+    *                     *
+        *              *
+            *      *
+                *
+*/
+
+void displayDiamond(int diamondHeight) {
+    cout << "\nDiamond Pattern:\n";
+    // Upper half (including middle)
+    for (int i = 1; i <= diamondHeight; i++) {
+        for (int j = 1; j <= diamondHeight - i; j++) {
+            cout << "   "; // Print spaces for alignment
+        }
+        for (int j = 1; j <= 2 * i - 1; j++) {
+            cout << "*  ";
+        }
+        cout << endl;
+    }
+    // Lower half
+    for (int i = diamondHeight - 1; i >= 1; i--) {
+        for (int j = 1; j <= diamondHeight - i; j++) {
+            cout << "   "; // Print spaces for alignment
+        }
+        for (int j = 1; j <= 2 * i - 1; j++) {
+            cout << "*  ";
+        }
+        cout << endl;
+    }
+}
 
 int main() {
     int choice;
@@ -104,7 +139,8 @@ int main() {
         cout << "4.FLoyd's triangle pattern\n";
         cout << "5. Inverted triangle pattern\n";
         cout << "6. Pyramid pattern\n";
-        cout << "7. Exit\n";
+        cout << "7. Diamond pattern\n";
+        cout << "8. Exit\n";
         cout << "==================================\n";
         cout << "Enter your choice: ";
         cin >> choice;
@@ -152,6 +188,13 @@ int main() {
                 displayPyramid(pyramidHeight);
                 break;
             case 7:
+                cout << "Diamond Pattern:\n";
+                cout << "Enter the height of the diamond: ";
+                int diamondHeight;
+                cin >> diamondHeight;
+                displayDiamond(diamondHeight);
+                break;
+            case 8:
                 cout << "Exiting pattern menu.\n";
                 return 0;
             default:
