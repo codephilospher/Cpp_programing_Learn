@@ -1,49 +1,49 @@
-<h1>work:-Learning C++</h1>
-<h2>Author :-Shiv Raj Sharma</h2>
-DAY 1:-
-:Writing Boilerplate .
-:Learning basic structure of C++ How actually we use STD functions .
-:Input & Output: Displaying output using std::cout and taking user input using std::cin.
+<h1>Learning C++</h1>
+<h2>Author: Shiv Raj Sharma</h2>
 
-:Variables & Data Types: Understanding memory allocation for primitive types (int, float, double, char, bool).
-
-:Operators:-
-
-:Arithmetic: Binary math operations (+, -, *, /, %).
-
-:Unary: Increment (++) and Decrement (--) operations.
-
-:Understanding loop concept.
-
-<i>WORK:-Create A BASIC CALCULATOR,FACTORIAL FINDER.</i>
-
-<h2>DAY:-2</h2>
-
-<h3>patterns.cpp</h3>
-The <b>patterns.cpp</b> program is a menu-driven C++ program for displaying different patterns.
-
-<h3>What I Practiced</h3>
+<h2>Day 1</h2>
 <ul>
-<li>Created a menu using <code>while</code> and <code>switch</code>.</li>
-<li>Used functions to keep each pattern separate and reusable.</li>
-<li>Created a square pattern with sequential numbers based on the side size entered by the user.</li>
-<li>Created a triangular pattern using stars based on the height entered by the user.</li>
-<li>Created a reverse triangular pattern with decreasing numbers in each row.</li>
-<li>Created Floyd's triangle with consecutive numbers arranged in rows.</li>
-<li>Created an inverted triangle pattern with repeated numbers in each row.</li>
-<li>Used nested <code>for</code> loops to print rows and columns.</li>
-<li>Used separate height inputs to control the size of each pattern.</li>
-<li>Added an exit option and a message for invalid choices.</li>
+<li>Wrote the boilerplate code for a C++ program.</li>
+<li>Learned the basic structure of a C++ program and the use of standard input/output.</li>
+<li>Practiced using <code>std::cout</code> and <code>std::cin</code>.</li>
+<li>Learned about variables and data types such as <code>int</code>, <code>float</code>, <code>double</code>, <code>char</code>, and <code>bool</code>.</li>
+<li>Practiced arithmetic and unary operators.</li>
+<li>Understood the concept of loops.</li>
 </ul>
 
-<h3>Menu Options</h3>
+<p><i>Work completed: created a basic calculator and a factorial finder.</i></p>
+
+<h2>Day 2</h2>
+<h3>patterns.cpp</h3>
+<p>This file is a menu-driven C++ program that displays different number and star patterns based on user input.</p>
+
+<h3>What I practiced</h3>
+<ul>
+<li>Used a <code>while</code> loop with a <code>switch</code> statement to create a pattern menu.</li>
+<li>Used separate functions for each pattern to keep the code organized and reusable.</li>
+<li>Created a square pattern with sequential numbers.</li>
+<li>Created a triangular star pattern.</li>
+<li>Created a reverse triangular number pattern.</li>
+<li>Created Floyd's triangle.</li>
+<li>Created an inverted triangle pattern.</li>
+<li>Added a new pyramid pattern option.</li>
+<li>Used nested <code>for</code> loops for row and column printing.</li>
+<li>Added input prompts for each pattern size or height.</li>
+<li>Added an exit option and invalid-choice handling.</li>
+</ul>
+
+<h3>Current menu options</h3>
 <ol>
-<li>Display a square pattern.</li>
-<li>Display a triangular pattern.</li>
-<li>Display a reverse triangular pattern.</li>
-<li>Display Floyd's triangle.</li>
-<li>Display an inverted triangle pattern.</li>
-<li>Exit the program.</li>
+<li>Square pattern</li>
+<li>Triangular pattern</li>
+<li>Reverse triangular pattern</li>
+<li>Floyd's triangle</li>
+<li>Inverted triangle pattern</li>
+<li>Pyramid pattern</li>
+<li>Exit the program</li>
 </ol>
+
+
+
 
 

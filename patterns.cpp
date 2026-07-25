@@ -54,6 +54,9 @@ void  displayInvertedTriangle(int invertedHeight) {
     cout << "\nInverted Triangle Pattern:\n";
     int num = 1; // You can change this value to adjust the height of the inverted triangle
     for (int i = 1; i <= invertedHeight; i++) {
+        for (int j = 1; j < i; j++) {
+            cout << "   "; // Print spaces for alignment
+        }
         for (int j = invertedHeight; j >= i; j--) {
             cout << num << "  ";
           
@@ -62,6 +65,34 @@ void  displayInvertedTriangle(int invertedHeight) {
         cout << endl;
     }
 }
+/*
+n=4
+            1
+        1   2    1
+    1   2   3    2    1
+1   2   3   4   3    2    1
+*/
+
+void displayPyramid(int pyramidHeight) {
+    cout << "\nPyramid Pattern:\n";
+    for (int i = 0; i < pyramidHeight; i++) {
+    // spaces
+    for(int j=0; j < pyramidHeight - i - 1; j++) {
+        cout << "   "; // Print spaces for alignment
+    }
+    // numbers
+    for (int j = 1; j <= i + 1; j++) {
+        cout << j << "  ";
+    }
+    // num2
+    for (int j = i; j >= 1; j--) {
+        cout <<  j << "  ";
+    }
+        
+        cout << endl;
+}
+}
+
 int main() {
     int choice;
 
@@ -72,7 +103,8 @@ int main() {
         cout << "3.Display reverse triangular pattern\n";
         cout << "4.FLoyd's triangle pattern\n";
         cout << "5. Inverted triangle pattern\n";
-        cout << "6. Exit\n";
+        cout << "6. Pyramid pattern\n";
+        cout << "7. Exit\n";
         cout << "==================================\n";
         cout << "Enter your choice: ";
         cin >> choice;
@@ -113,6 +145,13 @@ int main() {
                 displayInvertedTriangle(invertedHeight);
                 break;
             case 6:
+                cout << "Pyramid Pattern:\n";
+                cout << "Enter the height of the pyramid: ";
+                int pyramidHeight;
+                cin >> pyramidHeight;
+                displayPyramid(pyramidHeight);
+                break;
+            case 7:
                 cout << "Exiting pattern menu.\n";
                 return 0;
             default:
