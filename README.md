@@ -1,51 +1,54 @@
-<h1>Learning C++</h1>
-<h2>Author: Shiv Raj Sharma</h2>
+# Learning C++
 
-<h2>Day 1</h2>
-<ul>
-<li>Wrote the boilerplate code for a C++ program.</li>
-<li>Learned the basic structure of a C++ program and the use of standard input/output.</li>
-<li>Practiced using <code>std::cout</code> and <code>std::cin</code>.</li>
-<li>Learned about variables and data types such as <code>int</code>, <code>float</code>, <code>double</code>, <code>char</code>, and <code>bool</code>.</li>
-<li>Practiced arithmetic and unary operators.</li>
-<li>Understood the concept of loops.</li>
-</ul>
+## Author
+Shiv Raj Sharma
 
-<p><i>Work completed: created a basic calculator and a factorial finder.</i></p>
+## Day 1
+During the first day of practice, I focused on building a strong foundation in C++ programming.
 
-<h2>Day 2</h2>
-<h3>patterns.cpp</h3>
-<p>This file is a menu-driven C++ program that displays different number and star patterns based on user input.</p>
+### What I learned
+- Wrote the basic boilerplate structure for a C++ program.
+- Practiced using standard input and output with `std::cout` and `std::cin`.
+- Learned about variables and common data types such as `int`, `float`, `double`, `char`, and `bool`.
+- Explored arithmetic and unary operators.
+- Understood the basics of loops and their role in repetitive tasks.
 
-<h3>What I practiced</h3>
-<ul>
-<li>Used a <code>while</code> loop with a <code>switch</code> statement to create a pattern menu.</li>
-<li>Used separate functions for each pattern to keep the code organized and reusable.</li>
-<li>Created a square pattern with sequential numbers.</li>
-<li>Created a triangular star pattern.</li>
-<li>Created a reverse triangular number pattern.</li>
-<li>Created Floyd's triangle.</li>
-<li>Created an inverted triangle pattern.</li>
-<li>Added a new pyramid pattern option.</li>
-<li>Added a new diamond pattern option.</li>
-<li>Used nested <code>for</code> loops for row and column printing.</li>
-<li>Added input prompts for each pattern size or height.</li>
-<li>Added an exit option and invalid-choice handling.</li>
-</ul>
+### Completed work
+I created a simple calculator and a factorial finder, which helped me strengthen my understanding of basic programming logic and user interaction.
 
-<h3>Current menu options</h3>
-<ol>
-<li>Square pattern</li>
-<li>Triangular pattern</li>
-<li>Reverse triangular pattern</li>
-<li>Floyd's triangle</li>
-<li>Inverted triangle pattern</li>
-<li>Pyramid pattern</li>
-<li>Diamond pattern</li>
-<li>Exit the program</li>
-</ol>
+## Day 2
+I worked on pattern-based programs to improve my understanding of loops, control flow, and function-based program design.
 
+### File: patterns.cpp
+This file contains a menu-driven C++ program that displays different number and star patterns based on user input.
 
+### Skills practiced
+- Used `while` loops together with `switch` statements to create an interactive menu.
+- Divided the program into separate functions to keep the code organized and reusable.
+- Built several pattern types, including square patterns, triangle patterns, reverse triangular patterns, Floyd's triangle, and inverted triangle patterns.
+- Added support for pyramid and diamond patterns.
+- Used nested `for` loops to control row and column output.
+- Implemented input prompts and error handling for invalid choices.
 
+### Menu options included
+1. Square pattern
+2. Triangular pattern
+3. Reverse triangular pattern
+4. Floyd's triangle
+5. Inverted triangle pattern
+6. Pyramid pattern
+7. Diamond pattern
+8. Exit the program
 
+## Practice Session: practice.cpp
+The file `practice.cpp` focuses on hands-on practice with pattern generation and loop-based logic in C++.
+
+### What I implemented
+- Created functions to print star-based patterns using nested loops.
+- Designed pyramid-style structures with varying spacing and alignment.
+- Developed reverse pyramid output for additional pattern practice.
+- Structured the program to accept user input and generate multiple pattern outputs efficiently.
+
+### Learning outcome
+This practice session strengthened my understanding of loop control, function design, and visual output formatting in C++.
 
