@@ -122,6 +122,7 @@ void print8(int n){
     }
 }
 void print9(int n){
+
     char ch='A';
     for(int i=1; i<=n; i++){
         for(int j=i; j<=n; j++){
@@ -133,6 +134,18 @@ void print9(int n){
         cout << endl;
     }
 }
+void print10(int n){
+    char ch='A';
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+            cout << ch<< " ";
+          
+           
+        }
+        ch++;
+        cout << endl;
+    }
+}
 int main() {
     int n;
     cout << "Enter a number: ";
@@ -140,7 +153,7 @@ int main() {
     for (int i = 1; i <= n; i++) {
        int t;
        cin >> t;
-       print9(t);
+       print10(t);
     }
    
     return 0;
