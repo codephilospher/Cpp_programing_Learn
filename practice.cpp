@@ -146,6 +146,35 @@ void print10(int n){
         cout << endl;
     }
 }
+void print11(int n){
+    char ch='A';
+    for(int i=0; i<n; i++){
+        //spaces
+        for(int j=0; j<=n-i-1; j++){
+            cout << " ";
+        }
+        //alphabets
+       char cg='A';
+       int breakpoint=(2*i+1)/2;
+        for(int j=1; j<=2*i+1; j++){
+            cout << cg<< " ";
+           if(j<=breakpoint) cg++;
+           else cg--;
+        }
+        //spaces
+       for(int j=0; j<=n-i-1; j++){
+            cout << " ";
+          
+           
+         
+           
+        }
+        
+        cout << endl;
+    }
+}
+
+
 int main() {
     int n;
     cout << "Enter a number: ";
@@ -153,7 +182,7 @@ int main() {
     for (int i = 1; i <= n; i++) {
        int t;
        cin >> t;
-       print10(t);
+       print11(t);
     }
    
     return 0;
