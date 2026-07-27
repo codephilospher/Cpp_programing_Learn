@@ -81,6 +81,22 @@ void print5(int n){
       
     }
 }
+void print6(int n){
+    int space=2*n-2;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+            cout << j;
+        }
+        for(int k=0; k<space; k++){
+            cout << "*";
+        }
+        for(int l=i; l>=1; l--){
+            cout << l;
+        }
+        space-=2;
+        cout << endl;
+    }
+}
 
 
 
@@ -88,10 +104,10 @@ int main() {
     int n;
     cout << "Enter a number: ";
     cin >> n;
-    for (int i = 1; i <= n; ++i) {
+    for (int i = 1; i <= n; i++) {
        int t;
        cin >> t;
-       print5(t);
+       print6(t);
     }
    
     return 0;

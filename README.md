@@ -39,9 +39,16 @@ This is the main pattern project in the repository. It contains a menu-based pro
 This file helped me practice nested loops, spacing control, function design, and creating visual output in the console.
 
 ### 3. [practice.cpp](practice.cpp)
-This file is a practice-focused program used to strengthen pattern-building skills. It contains additional exercises involving stars, pyramids, and diamond-style shapes.
+This file has been expanded into a more advanced pattern-practice program that helps strengthen core C++ logic and structure. It now includes multiple pattern-building exercises such as:
+- Descending star patterns
+- Number-based pattern generation
+- Centered pyramid and reverse pyramid shapes
+- Diamond-style pattern creation
+- Increasing and decreasing star designs
+- Alternating binary-style patterns
+- Mirrored number patterns with star separators
 
-It is a good example of how repetition and logic can be used to create structured visual patterns.
+The main function also now takes input values and prints the corresponding pattern for each case, making it a good example of how loops, functions, and reusable code can be used together to create organized visual output.
 
 ## Concepts I Learned
 Throughout this repository, I practiced and improved my understanding of:
