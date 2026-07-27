@@ -107,7 +107,20 @@ void print7(int n){
         cout << endl;
     }
 }
-
+void print8(int n){
+    char ch='A';
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+            cout << ch<< " ";
+          ch++;
+           
+        }
+        ch='A';
+          
+         
+        cout << endl;
+    }
+}
 
 int main() {
     int n;
@@ -116,7 +129,7 @@ int main() {
     for (int i = 1; i <= n; i++) {
        int t;
        cin >> t;
-       print7(t);
+       print8(t);
     }
    
     return 0;
