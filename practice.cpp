@@ -36,7 +36,7 @@ void reversePyramid(int n) {
     
 
     for(int i=n; i>0; i--) {
-    for(int j=n-i; j>0; j--) {
+    for(int j=n-i+1; j>0; j--) {
         cout << " ";
     }
     for(int k=i; k>0; k--) {
@@ -48,6 +48,26 @@ void reversePyramid(int n) {
     cout << endl;
 }
 }
+void diamond(int n){
+    pyramid(n);
+    reversePyramid(n);
+}
+
+void print4(int n) {
+    for(int i=0; i<=2*n-1; i++) {
+        int stars=i;
+        if(i>n)stars=2*n-i;
+        for(int j=1; j<=stars; j++) {
+            cout << "*";
+         
+            }
+         
+          cout << endl; 
+    
+
+}
+}
+
 
 
 
@@ -58,7 +78,7 @@ int main() {
     for (int i = 1; i <= n; ++i) {
        int t;
        cin >> t;
-       reversePyramid(t);
+       print4(t);
     }
    
     return 0;
