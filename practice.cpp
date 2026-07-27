@@ -121,7 +121,18 @@ void print8(int n){
         cout << endl;
     }
 }
-
+void print9(int n){
+    char ch='A';
+    for(int i=1; i<=n; i++){
+        for(int j=i; j<=n; j++){
+            cout << ch<< " ";
+          ch++;
+           
+        }
+        ch='A';
+        cout << endl;
+    }
+}
 int main() {
     int n;
     cout << "Enter a number: ";
@@ -129,7 +140,7 @@ int main() {
     for (int i = 1; i <= n; i++) {
        int t;
        cin >> t;
-       print8(t);
+       print9(t);
     }
    
     return 0;
