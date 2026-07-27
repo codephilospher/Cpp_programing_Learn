@@ -97,7 +97,16 @@ void print6(int n){
         cout << endl;
     }
 }
-
+void print7(int n){
+    int num=1;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+            cout << num << " ";
+            num++;
+        }
+        cout << endl;
+    }
+}
 
 
 int main() {
@@ -107,7 +116,7 @@ int main() {
     for (int i = 1; i <= n; i++) {
        int t;
        cin >> t;
-       print6(t);
+       print7(t);
     }
    
     return 0;
