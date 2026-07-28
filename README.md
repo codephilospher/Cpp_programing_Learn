@@ -39,16 +39,26 @@ This is the main pattern project in the repository. It contains a menu-based pro
 This file helped me practice nested loops, spacing control, function design, and creating visual output in the console.
 
 ### 3. [practice.cpp](practice.cpp)
-This file has been expanded into a more advanced pattern-practice program that helped me strengthen my understanding of C++ logic, loops, and function-based programming. It now includes several new pattern exercises such as:
-- Descending star patterns
-- Number-based pattern generation
-- Centered pyramid and reverse pyramid designs
-- Diamond-style pattern creation
-- Increasing and decreasing star patterns
-- Alternating binary-style patterns
-- Mirrored number patterns with star separators
+`practice.cpp` is an advanced pattern-practice program that helped me strengthen C++ logic, nested loops, and function-based design. It implements a variety of console patterns — each separated into its own function for clarity and reuse.
 
-The file also uses multiple custom functions such as print1, print2, pyramid, reversePyramid, diamond, print4, print5, and print6 to organize the code clearly. In the main function, the program takes input values and prints the corresponding pattern for each case, which made it a useful practice example for combining repetition, structure, and reusable logic in one program.
+Functions included (brief):
+- `print1(n)`: Descending star triangle (rows of `*` decreasing from `n` to 1).
+- `print2(n)`: Number-based triangle that prints ascending numbers across each row (with decreasing row length).
+- `pyramid(n)`: Centered pyramid of stars (increasing row width centered with spaces).
+- `reversePyramid(n)`: Centered reverse pyramid (mirror of `pyramid`).
+- `diamond(n)`: Combination of `pyramid` and `reversePyramid` to form a diamond shape.
+- `print4(n)`: Symmetric vertical star pattern that grows to a midpoint then shrinks.
+- `print5(n)`: Alternating binary-style triangle printing `1` and `0` (row-dependent start).
+- `print6(n)`: Mirrored number pyramid with `*` separators (numbers 1..i, filler, then i..1).
+- `print7(n)`: Consecutive-number triangle (Floyd's triangle style).
+- `print8(n)`: Alphabet triangle where each row prints letters starting from `A` across the row.
+- `print9(n)`: Row-wise decreasing alphabet sequences starting from `A`.
+- `print10(n)`: Each row prints the same alphabet character, which advances each row (`A`, `B`, `C`, ...).
+- `print11(n)`: Centered alphabet pyramid that increases then decreases across the row (palindromic letters).
+- `print12(n)`: Letter-range triangles (rows printing from a decreasing start letter up to `E`).
+- `print13(n)`: Symmetric double-star blocks separated by spaces (top and bottom halves mirror each other).
+
+The `main()` in this file reads input values and demonstrates using these functions — for example it reads multiple integers and calls `print13()` for each input value, making it useful for testing different pattern sizes.
 
 ## Concepts I Learned
 Throughout this repository, I practiced and improved my understanding of:
