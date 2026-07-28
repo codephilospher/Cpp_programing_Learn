@@ -191,6 +191,34 @@ void print12(int n){
 }
 
 }
+
+void print13(int n){
+    
+   for (int i = 0; i < n; i++) {
+        int stars = n - i;
+        int spaces = 2 * i;
+
+        for (int j = 0; j < stars; j++) cout << "*";
+        for (int j = 0; j < spaces; j++) cout << " ";
+        for (int j = 0; j < stars; j++) cout << "*";
+
+        cout << endl;
+    }
+
+    // Bottom Half (Reflected: row count decreases from n-1 down to 0)
+    for (int i = n - 1; i >= 0; i--) {
+        int stars = n - i;
+        int spaces = 2 * i;
+
+        for (int j = 0; j < stars; j++) cout << "*";
+        for (int j = 0; j < spaces; j++) cout << " ";
+        for (int j = 0; j < stars; j++) cout << "*";
+
+        cout << endl;
+    }
+  
+
+}
 int main() {
     int n;
     cout << "Enter a number: ";
@@ -198,7 +226,7 @@ int main() {
     for (int i = 1; i <= n; i++) {
        int t;
        cin >> t;
-       print12(t);
+       print13(t);
     }
    
     return 0;
