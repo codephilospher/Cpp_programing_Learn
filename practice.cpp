@@ -219,7 +219,36 @@ void print13(int n){
   
 
 }
-
+void print14(int n){
+    int space=2*(n-1);
+    for(int i=0; i<n; i++){
+        
+        for(int j=0; j<=i; j++){
+            cout << "*";
+        }
+        for(int k=0; k<space; k++){
+            cout << " ";
+        }
+        
+        for(int k=i; k>=0; k--){
+            cout << "*";
+        }
+        space=space-2;
+        cout << endl;
+    }
+    for(int i=1; i<n; i++){
+        for(int j=n-i; j>0; j--){
+            cout << "*";
+        }
+        for(int k=0; k<2*i; k++){
+            cout << " ";
+        }
+        for(int k=n-i; k>0; k--){
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
 int main() {
     int n;
     cout << "Enter a number: ";
@@ -227,7 +256,7 @@ int main() {
     for (int i = 1; i <= n; i++) {
        int t;
        cin >> t;
-       print13(t);
+       print14(t);
     }
    
     return 0;
