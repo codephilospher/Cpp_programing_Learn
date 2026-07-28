@@ -39,7 +39,7 @@ This is the main pattern project in the repository. It contains a menu-based pro
 This file helped me practice nested loops, spacing control, function design, and creating visual output in the console.
 
 ### 3. [practice.cpp](practice.cpp)
-`practice.cpp` is an advanced pattern-practice program that helped me strengthen C++ logic, nested loops, and function-based design. It implements a variety of console patterns — each separated into its own function for clarity and reuse.
+`practice.cpp` is an expanded pattern-practice program that helped me strengthen C++ logic, nested loops, and function-based design. It implements a wide variety of console patterns — each separated into its own function for clarity and reuse.
 
 Functions included (brief):
 - `print1(n)`: Descending star triangle (rows of `*` decreasing from `n` to 1).
@@ -57,8 +57,11 @@ Functions included (brief):
 - `print11(n)`: Centered alphabet pyramid that increases then decreases across the row (palindromic letters).
 - `print12(n)`: Letter-range triangles (rows printing from a decreasing start letter up to `E`).
 - `print13(n)`: Symmetric double-star blocks separated by spaces (top and bottom halves mirror each other).
+- `print14(n)`: A mirrored star pattern that forms a full diamond-like structure with both top and bottom halves.
+- `print15(n)`: A hollow square pattern that prints only the border using `*` characters.
+- `print16(n)`: A number-based pattern that creates a layered square-like design using a minimum-distance formula.
 
-The `main()` in this file reads input values and demonstrates using these functions — for example it reads multiple integers and calls `print13()` for each input value, making it useful for testing different pattern sizes.
+The `main()` function in this file now reads a number and then multiple test values, using each value to call `print16()` and display a different pattern size. This makes the program useful for testing and comparing several pattern variations quickly.
 
 ## Concepts I Learned
 Throughout this repository, I practiced and improved my understanding of:
