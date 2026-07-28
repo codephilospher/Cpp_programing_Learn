@@ -249,6 +249,53 @@ void print14(int n){
         cout << endl;
     }
 }
+void print15(int n){
+
+   /* for(int i=0;i<n;i++){
+            int num=4;
+    int space=2;
+    int num2=1;
+        if(i==0 || i==n-1) num=4;
+        else num=1;
+        for(int j=0;j<num;j++){
+            cout << "*";
+        }
+        if(i==0 || i==n-1) space=0;
+        else space=2;
+        for(int k=0; k<space; k++){
+            cout << " ";
+        }
+        if(i!=0 && i!=n-1) num2=1;
+        else num2=0;
+        for(int l=0;l<num2;l++){
+            cout << "*";
+        }
+        cout << endl;
+
+       
+
+    }
+        */
+       // Function to print hollow square pattern
+   
+        // Outer loop for rows
+        for (int i = 0; i < n; i++) {
+            // Inner loop for columns
+            for (int j = 0; j < n; j++) {
+                // Print star if it's a border cell
+                if (i == 0 || j == 0 || i == n - 1 || j == n - 1)
+                    cout << "*";
+                // Print space otherwise
+                else
+                    cout << " ";
+            }
+            // Move to next line after each row
+            cout << endl;
+        }
+    }
+
+
+
 int main() {
     int n;
     cout << "Enter a number: ";
@@ -256,7 +303,7 @@ int main() {
     for (int i = 1; i <= n; i++) {
        int t;
        cin >> t;
-       print14(t);
+       print15(t);
     }
    
     return 0;
