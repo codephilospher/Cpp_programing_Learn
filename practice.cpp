@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 void print1(int n) {
     for(int i=n; i>=1; i--) {
@@ -293,7 +294,19 @@ void print15(int n){
             cout << endl;
         }
     }
-
+void print16(int n){
+    for(int i=0; i<2*n-1; i++){
+        for(int j=0; j<2*n-1; j++){
+            int top=i;
+            int left=j;
+            int right=(2*n-2)-j;
+            int bottom=(2*n-2)-i;
+            cout << n-min(min(top,bottom),min(left,right))<< " ";
+        }
+       
+        cout << endl;
+    }
+}
 
 
 int main() {
@@ -303,7 +316,7 @@ int main() {
     for (int i = 1; i <= n; i++) {
        int t;
        cin >> t;
-       print15(t);
+       print16(t);
     }
    
     return 0;
