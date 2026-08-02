@@ -62,6 +62,22 @@ else{
     cout<<"The number is not an Armstrong number."<<endl;
 }
 }
+void AllDivisors(int n){
+    vector<int> divisors;
+    for(int i=1;i<=sqrt(n);i++){
+        if(n%i==0){
+            divisors.push_back(i);
+            if(i!=n/i){
+                divisors.push_back(n/i);
+            }
+        }
+    }   
+    cout<<"All divisors of "<<n<<" are: ";
+    for(int i=0;i<divisors.size();i++){
+        cout<<divisors[i]<<" ";
+    }
+    cout<<endl;
+}
 
 int main(){
     int choice;
@@ -70,7 +86,7 @@ int main(){
          cout<<"\n=========Basic Maths Menu==========\n"<<endl;
    
     cout<<"1. Count all digits in a number"<<endl;
-    cout<<"2. Reverse a numbern"<<endl;
+    cout<<"2. Reverse a number"<<endl;
     cout<<"3. Check if a number is palindrome"<<endl;
     cout<<"4. GCD of two numbers"<<endl;
     cout<<"5. check if a number is Armstrong or not"<<endl;
