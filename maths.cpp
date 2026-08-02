@@ -13,6 +13,22 @@ while(n>0){
 }
 cout<<"Reversed number: "<<revnum<<endl;
 }
+void checkPalindrome(int n){
+int revnum=0;
+int copy=n;
+
+while(copy>0){
+    int lastdigit=copy%10;
+    revnum=revnum*10+lastdigit;
+    copy=copy/10;
+}
+if(revnum==n){
+    cout<<"The number is a palindrome."<<endl;
+}
+else{
+    cout<<"The number is not a palindrome."<<endl;
+}
+}
 
 int main(){
     int choice;
