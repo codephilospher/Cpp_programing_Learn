@@ -29,6 +29,24 @@ else{
     cout<<"The number is not a palindrome."<<endl;
 }
 }
+void gcd(int a,int b){
+    while((a>0) && (b>0)){
+        if(a>b){
+            a=a%b;
+        }
+        else{
+            b=b%a;
+        }
+    }
+    if(a==0){
+        cout<<"GCD: "<<b<<endl;
+    }
+    else{
+        cout<<"GCD: "<<a<<endl;
+    }   
+}
+
+
 
 int main(){
     int choice;
