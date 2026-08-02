@@ -45,8 +45,23 @@ void gcd(int a,int b){
         cout<<"GCD: "<<a<<endl;
     }   
 }
+void checkArmstrong(int n){
+int sum=0;
+int copy=n;
+int digits=(int)log10(n)+1;
 
-
+while(copy>0){
+    int lastdigit=copy%10;
+    sum=sum+pow(lastdigit,digits);
+    copy=copy/10;
+}
+if(sum==n){
+    cout<<"The number is an Armstrong number."<<endl;
+}
+else{
+    cout<<"The number is not an Armstrong number."<<endl;
+}
+}
 
 int main(){
     int choice;
