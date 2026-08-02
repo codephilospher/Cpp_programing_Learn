@@ -1,5 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
+void countDigits(int n){
+    int cnt=(int)log10(n)+1;
+    cout<<"Total digits: "<<cnt<<endl;
+}
+
 int main(){
     int choice;
     while (true)
@@ -17,8 +22,7 @@ int main(){
      cout<<"===================================="<<endl;
      cout<<"Enter your choice: ";
     cin>>choice;
-    return 0;
-
+    
         
     }
     
