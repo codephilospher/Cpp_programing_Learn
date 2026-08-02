@@ -4,6 +4,15 @@ void countDigits(int n){
     int cnt=(int)log10(n)+1;
     cout<<"Total digits: "<<cnt<<endl;
 }
+void reverseNumber(int n){
+int revnum=0;
+while(n>0){
+    int lastdigit=n%10;
+    revnum=revnum*10+lastdigit;
+    n=n/10;
+}
+cout<<"Reversed number: "<<revnum<<endl;
+}
 
 int main(){
     int choice;
