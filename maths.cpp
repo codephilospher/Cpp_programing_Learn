@@ -110,7 +110,7 @@ int main(){
     cin>>choice;
  
 
-   switch(choice){
+   switch(choice){ 
         case 1:
             int num1;
             cout<<"Enter a number: ";
