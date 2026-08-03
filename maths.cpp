@@ -108,9 +108,64 @@ int main(){
      cout<<"===================================="<<endl;
      cout<<"Enter your choice: ";
     cin>>choice;
+ 
+
+   switch(choice){
+        case 1:
+            int num1;
+            cout<<"Enter a number: ";
+            cin>>num1;
+            countDigits(num1);
+            break;
+        case 2:
+            int num2;
+            cout<<"Enter a number: ";
+            cin>>num2;
+            reverseNumber(num2);
+            break;
+        case 3:
+            int num3;
+            cout<<"Enter a number: ";
+            cin>>num3;
+            checkPalindrome(num3);
+            break;
+        case 4:
+            int a,b;
+            cout<<"Enter two numbers: ";
+            cin>>a>>b;
+            gcd(a,b);
+            break;
+        case 5:
+            int num5;
+            cout<<"Enter a number: ";
+            cin>>num5;
+            checkArmstrong(num5);
+            break;
+        case 6:
+            int num6;
+            cout<<"Enter a number: ";
+            cin>>num6;
+            AllDivisors(num6);
+            break;
+        case 7:
+            int num7;
+            cout<<"Enter a number: ";
+            cin>>num7;
+            checkPrime(num7);
+            break;
+        case 8:
+             cout << "Exiting the program." << endl;
+             return 0; 
+        default:
+             cout << "Invalid choice. Please try again." << endl;   
     
         
     }
+    // Pause before looping back to the menu
+        cout << "\nPress Enter to return to the menu...";
+        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // clear remaining newline from cin
+        cin.get(); // wait for user keypress
+}
     
    
 
