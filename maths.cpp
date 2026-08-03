@@ -78,7 +78,19 @@ void AllDivisors(int n){
     }
     cout<<endl;
 }
-
+void checkPrime(int n){
+    if(n<=1){
+        cout<<"The number is not prime."<<endl;
+        return;
+    }
+    for(int i=2;i<=sqrt(n);i++){
+        if(n%i==0){
+            cout<<"The number is not prime."<<endl;
+            return;
+        }
+    }
+    cout<<"The number is prime."<<endl;
+}
 int main(){
     int choice;
     while (true)
