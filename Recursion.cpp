@@ -8,12 +8,14 @@ int factorial( int n) {
     return n * factorial(n - 1);
 }
 
-void reversearray(int arr[], int n, int i) {
-    if (i >= n / 2) {
+void reversearray(int arr[], int n) {
+    if (n <= 1) {
         return;
     }
-    swap(arr[i], arr[n - i - 1]);
-    reversearray(arr, n, i + 1);
+    swap(arr[0], arr[n - 1]);
+    reversearray(arr + 1, n - 2);
+
+  
 }
 
 void printArray(const int arr[], int n) {
@@ -65,7 +67,7 @@ int main() {
             cout << "Original array: ";
             printArray(arr, n);
 
-            reversearray(arr, n, 0);
+            reversearray(arr, n);
             cout << "Reversed array: ";
             printArray(arr, n);
             break;
