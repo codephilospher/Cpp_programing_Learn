@@ -44,7 +44,7 @@ void palindromestring(string str, int n,int i) {
         return;
     }
     palindromestring(str, n, i + 1);
-}
+} 
 
 int main() {
     int choice;
