@@ -29,6 +29,7 @@ This repository is not just a collection of small programs. It demonstrates a cl
 - [maths.cpp](maths.cpp) — number theory and mathematical logic exercises
 - [patterns.cpp](patterns.cpp) — pattern-based learning using nested loops
 - [practice.cpp](practice.cpp) — advanced pattern and visual logic practice
+- [Recursion.cpp](Recursion.cpp) — menu-based recursion practice with factorial, array reversal, and palindrome checking
 
 ---
 
@@ -132,6 +133,34 @@ This file reflects serious practice and a strong grasp of how to build reusable 
 
 ---
 
+## 5) [Recursion.cpp](Recursion.cpp)
+
+This file introduces a more structured approach to recursive thinking by combining multiple recursion-based problems into one interactive menu-driven program.
+
+### Included work
+- factorial calculation using recursion
+- array reversal using recursive function calls
+- palindrome check for strings using recursion
+- user-friendly menu-based console interface
+- clean program flow with exit option
+
+### Core concepts practiced
+- recursive function design
+- base case and recursive case thinking
+- function decomposition
+- modular code organization
+- interactive menu-driven programming
+
+### What this file demonstrates
+- understanding of how recursion simplifies repetitive tasks
+- ability to break a problem into smaller subproblems
+- practical use of functions in a real console application
+- a strong foundation for future recursive problem solving
+
+This file is an important step because it shows how recursion can be applied in a practical and reusable way instead of only in isolated examples.
+
+---
+
 ## Hard work behind the project
 This repository is a better example of learning than a simple code dump because it also reflects the effort invested in documenting and presenting the work professionally.
 
@@ -185,6 +214,9 @@ g++ patterns.cpp -o patterns
 
 g++ practice.cpp -o practice
 ./practice
+
+g++ Recursion.cpp -o recursion
+./recursion
 ```
 
 ---
@@ -198,4 +230,5 @@ It highlights not only the coding work but also the care taken to write a profes
 
 ## Author
 Shiv Raj Sharma
+
 
