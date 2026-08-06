@@ -29,13 +29,21 @@ void showMenu() {
     cout << "\n===== Recursion Menu =====" << endl;
     cout << "1. Find factorial" << endl;
     cout << "2. Reverse an array" << endl;
-    cout << "3. Add future function here" << endl;
+    cout << "3. Check if a string is a palindrome" << endl;
     cout << "4. Exit" << endl;
     cout << "Enter your choice: ";
 }
 
-void futureFunction() {
-    cout << "You can add another recursion-based function here later." << endl;
+void palindromestring(string str, int n,int i) {
+    if (i >= n / 2) {
+        cout << "The string is a palindrome." << endl;
+        return;
+    }
+    if (str[i] != str[n - 1 - i]) {
+        cout << "The string is not a palindrome." << endl;
+        return;
+    }
+    palindromestring(str, n, i + 1);
 }
 
 int main() {
@@ -73,7 +81,10 @@ int main() {
             break;
         }
         case 3: {
-            futureFunction();
+            string str;
+            cout << "Enter a string: ";
+            cin >> str;
+            palindromestring(str, str.length(), 0);
             break;
         }
         case 4: {
